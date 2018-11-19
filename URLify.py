@@ -1,9 +1,21 @@
-def URLify(input_string):
-    output_string = ''
-    for char in input_string:
-        if char == ' ':
-            output_string += '%20'
-        else:
-            output_string += char
+def URLify(string, true_length):
+    space_count = 0
+    for j in string:
+        if j == ' ':
+            space_count += 1
 
-    return output_string
+    index = true_length + 2*space_count
+    print(index)
+    string_list = list(string)
+    for i in reversed(range(true_length)):
+        print(i)
+        if string[i] == ' ':
+            string_list[index - 1] = '0'
+            string_list[index - 2] = '2'
+            string_list[index - 3] = '%'
+            index -= 3
+        else:
+            string_list[index - 1] = string[i]
+            index -= 1
+
+    return string_list
