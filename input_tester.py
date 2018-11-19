@@ -1,10 +1,10 @@
-from is_unique import is_unique
-from check_permutation import check_permutation
+from URLify import URLify
 
 def main():
-    input_string1 = input('Enter your 1st string:')
-    input_string2 = input('Enter your 2nd string:')
-    print(check_permutation(input_string1, input_string2))
+    input_string = str(input('Enter your string:'))
+    true_length = int(input('Enter your string length:'))
+    # true_length = len(input_string)
+    print(URLify(input_string, true_length))
 
 if __name__ == "__main__":
     main()
