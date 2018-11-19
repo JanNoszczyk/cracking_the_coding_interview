@@ -1,8 +1,8 @@
-from is_unique import is_unique
+from URLify import URLify
 
 def main():
-    input_string = input('Enter your string:')
-    print(is_unique(input_string))
+    input_string = str(input('Enter your string:'))
+    print(URLify(input_string))
 
 if __name__ == "__main__":
     main()
