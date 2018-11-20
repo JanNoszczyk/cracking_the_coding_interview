@@ -1,8 +1,10 @@
 from URLify import URLify
 
 def main():
-    input_string = str(input('Enter your string:'))
-    true_length = int(input('Enter your string length:'))
+    # input_string = str(input('Enter your string:'))
+    # true_length = int(input('Enter your string length:'))
+    input_string = 'Hey Jan   '
+    true_length = 7
     # true_length = len(input_string)
     print(URLify(input_string, true_length))
 
