@@ -1,8 +1,12 @@
 def palindrome_permutation(input_string):
 
-    no_spaces = 0
-    for i in input_string:
-        if i == ' ':
-            no_spaces += 1
+    string_length = len(input_string)
 
-    number_repetitions =
+    repetition_dict = {}
+
+
+    if string_length % 2 == 0:
+        # EVEN
+
+    else:
+        sds
