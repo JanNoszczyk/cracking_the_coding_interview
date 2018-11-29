@@ -1,3 +1,12 @@
+# Write a method to replace all spaces in a string with '%20'.
+# You may assume that the string has sufficient space at the end to hold the additional characters,
+# and that you are given the "true" length of the string.
+# (Note: If implementing in Java,please use a character array so that you can perform this operation in place.)
+# EXAMPLE
+# Input: "Mr John Smith ", 13
+# Output: "Mr%20John%20Smith"
+
+# Note this is a long implementation trying to mimic the behaviour of character arrays in Java
 def URLify(string, true_length):
     string = list(string)
     space_count = 0

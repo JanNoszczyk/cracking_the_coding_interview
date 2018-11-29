@@ -1,12 +1,9 @@
-from URLify import URLify
+from palindrome_permutation import palindrome_permutation
 
 def main():
-    # input_string = str(input('Enter your string:'))
+    input_string = str(input('Enter your string:'))
     # true_length = int(input('Enter your string length:'))
-    input_string = 'Hey Jan   '
-    true_length = 7
-    # true_length = len(input_string)
-    print(URLify(input_string, true_length))
+    print(palindrome_permutation(input_string))
 
 if __name__ == "__main__":
     main()
