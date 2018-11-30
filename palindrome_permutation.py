@@ -7,6 +7,7 @@
 # Output: True (permutations: "taco cat", "atco eta", etc.)
 
 def palindrome_permutation(input_string):
+    input_string = input_string.lower()
     repetition_dict = {}
     for char in input_string:
         if char in repetition_dict:
